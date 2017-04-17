@@ -1,16 +1,12 @@
 # Setup
-Put these files in 
-
-`/Users/tsweetser/backup/`. 
-
-Then, run 
+Run
 
 `crontab -e`
 
 and add these lines:
 ```
-* 14 * * * /Users/tsweetser/backup/R_packages.sh
+* 14 * * * /path/to/this/folder/R_packages.sh
 ```
 ```
-* 15 * * * /Users/tsweetser/backup/pip_freeze.sh
+* 15 * * * /path/to/this/folder/pip_freeze.sh
 ```
