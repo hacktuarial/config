@@ -9,3 +9,8 @@ function rendeR {
     fi
     /usr/local/bin/Rscript -e "rmarkdown::render('$1')"
 }
+
+
+function get_branch {
+(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+}
